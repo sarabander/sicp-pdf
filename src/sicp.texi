@@ -4086,7 +4086,7 @@ have it return 0.
 @end quotation
 
 @sp 0.5
-@section Formulating Abstractions@* with Higher-Order Procedures
+@section Formulating Abstractions with Higher-Order Procedures
 @node	1.3,  , 1.2, Chapter 1
 
 We have seen that procedures are, in effect, abstractions that describe
@@ -5734,7 +5734,7 @@ for manipulating rational numbers.
 * 2-1-4::            Extended Exercise: Interval Arithmetic
 @end menu
 
-@subsection Example: Arithmetic Operations@* for Rational Numbers
+@subsection Example: Arithmetic Operations for Rational Numbers
 @node	2.1.1, 2.1.2, 2.1, 2.1
 
 Suppose we want to do arithmetic with rational numbers.  We want to be able to
@@ -28116,7 +28116,7 @@ satisfied).
 The selectors that define the syntax of @code{not} and @code{lisp-value} are
 given in @ref{4.4.4.7}.
 
-@subsubsection Finding Assertions@* by Pattern Matching
+@subsubsection Finding Assertions by Pattern Matching
 @node 4.4.4.3, 4.4.4.4, 4.4.4.2, 4.4.4
 
 @code{find-assertions}, called by @code{simple-query} (@ref{4.4.4.2}),
@@ -30860,7 +30860,7 @@ so that the assembler will signal an error if the same label name is used to
 indicate two different locations.
 @end quotation
 
-@subsection Generating Execution Procedures@* for Instructions
+@subsection Generating Execution Procedures for Instructions
 @node	5.2.3, 5.2.4, 5.2.2, 5.2
 
 The assembler calls @code{make-execution-procedure} to generate the execution
