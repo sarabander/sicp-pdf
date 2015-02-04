@@ -4,8 +4,8 @@
 @settitle            Structure and Interpretation of Computer Programs, 2e
 @comment             Unofficial Texinfo Format
 @comment
-@set utfversion      2.andresraba5.4
-@set utfversiondate  February 3, 2015
+@set utfversion      2.andresraba7
+@set utfversiondate  February 4, 2015
 @comment
 @comment             This file is licensed under a Creative Commons
 @comment             Attribution-NonCommercial-ShareAlike 3.0 Unported License
@@ -72,6 +72,11 @@
 @comment   and added more fulltext links to References. Brian Wignall
 @comment   decapitalized function names at the beginning of sentences.
 @comment
+@comment * (Versions 2.andresraba6.* are the HTML5/EPUB3 versions.)
+@comment
+@comment * Version 2.andresraba7 (February 4, 2015) by Andres Raba.
+@comment   A version suitable for printing on US Letter paper.
+@comment
 
 
 \frontmatter
@@ -110,8 +115,8 @@ with Julie Sussman, foreword by Alan J. Perlis
 @noindent
 This work is licensed under a Creative Commons@*
 Attribution-NonCommercial-ShareAlike 3.0 Unported License@*
-(@url{http://creativecommons.org/licenses/by-nc-sa/3.0/, @acronym{CC BY-NC-SA 3.0}}).
-Based on a work at @url{http://mitpress.mit.edu/sicp/, mitpress.mit.edu}.
+(@url{http://creativecommons.org/licenses/by-nc-sa/3.0/}).@*
+Based on a work at @url{http://mitpress.mit.edu/sicp/}.
 
 @sp 1.26
 @noindent
@@ -6979,7 +6984,7 @@ follows:
 @end lisp
 
 Define the procedures @code{first-denomination},
-@code{except-first-de- nomination}, and @code{no-more?} in terms of primitive
+@code{except-first-denomination}, and @code{no-more?} in terms of primitive
 operations on list structures.  Does the order of the list @code{coin-values}
 affect the answer produced by @code{cc}?  Why or why not?
 @end quotation
@@ -35665,7 +35670,7 @@ Toolkit: A general framework for special-purpose computing.
 
 \phantomsection @anchor{ANSI 1994}
 @acronym{@b{ANSI}} @acronym{X}3.226-1994. @cite{American National Standard for Information
-Sys\-tems---Programming Language---Common Lisp}.
+Systems --- Programming Language --- Common Lisp}.
 
 \phantomsection @anchor{Appel 1987}
 @b{Appel}, Andrew W.  1987.  Garbage collection can be faster than stack
@@ -35711,6 +35716,8 @@ N.J.: Princeton University Press.
 @b{Clark}, Keith L.  1978.  Negation as failure.  In @cite{Logic and Data Bases}.
 New York: Plenum Press, pp. 293-322.
 @url{http://www.doc.ic.ac.uk/~klc/neg.html, –›}
+
+\pagebreak
 
 \phantomsection @anchor{Clinger (1982)}
 @b{Clinger}, William.  1982.  Nondeterministic call by need is neither lazy nor by
@@ -36127,6 +36134,8 @@ for the extended lambda calculus.  Memo 349, @acronym{MIT} Artificial
 Intelligence Laboratory.
 @url{http://dspace.mit.edu/handle/1721.1/5794, –›}
 
+\pagebreak
+
 \phantomsection @anchor{Steele et al. 1983}
 @b{Steele}, Guy Lewis, Jr., Donald R. Woods, Raphael A. Finkel, Mark R.  Crispin,
 Richard M. Stallman, and Geoffrey S. Goodfellow.  1983.  @cite{The Hacker's
@@ -36202,6 +36211,8 @@ program for understanding natural language.  Technical report @acronym{AI TR}-17
 Lisp with dependency-directed backtracking.  @cite{@acronym{AAAI}-87},
 pp. 59-64.
 @url{http://www.aaai.org/Papers/AAAI/1987/AAAI87-011.pdf, –›}
+
+\enlargethispage{\baselineskip}
 
 \phantomsection @anchor{Zippel (1979)}
 @b{Zippel}, Richard.  1979.  Probabilistic algorithms for sparse polynomials.
