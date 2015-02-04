@@ -747,10 +747,10 @@ Poorly-Understood and Sloppily-Formulated Ideas''
 @c @sp 0.8
 
 @noindent
-\lettrine[lhang=0.17]{``T}{he Structure and Interpretation of Computer Programs''} is the entry-level
-subject in computer science at the Massachusetts Institute of Technology.  It
-is required of all students at @acronym{MIT} who major in electrical
-engineering or in computer science, as one-fourth of the ``common core
+\lettrine[lhang=0.40]{``T}{he Structure and Interpretation of Computer Programs''}
+is the entry-level subject in computer science at the Massachusetts Institute of
+Technology.  It is required of all students at @acronym{MIT} who major in
+electrical engineering or in computer science, as one-fourth of the ``common core
 curriculum,'' which also includes two subjects on circuits and linear systems
 and a subject on the design of digital systems.  We have been involved in the
 development of this subject since 1978, and we have taught this material in its
