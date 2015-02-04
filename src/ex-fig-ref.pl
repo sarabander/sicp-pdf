@@ -8,12 +8,13 @@
 #  or ./ex-fig-ref.pl -f > figures.tex            #
 #  (both of which will be read in by sicp.tex).   #
 #                                                 #
-#  © 2013 Andres Raba / License: GNU GPL v.3      #
+#  © 2013, 2015 Andres Raba                       #
+#  License: GNU GPL v.3                           #
 #                                                 #
  ################################################# 
 
 
-$columns = 10;		# no. of columns in the table
+$columns = 7;		# no. of columns in the table
 
 %ex_per_chap = (	# how many exercises per chapter
 	1 => 46,
@@ -54,8 +55,7 @@ foreach $chap_no (sort keys(%ref_per_chap)) {
 			print "\n\\\\ \n";
 		}
 
-		print "\\hyperref[$reftype $chap_no.$ref_no]{$chap_no.$ref_no}";
-
+		print "\\hyperref[$reftype $chap_no.$ref_no]{$chap_no.$ref_no: \\pageref{$reftype $chap_no.$ref_no}}";
 		if (($ref_no % $columns) != 0) {
 			print " \&\n";
 		} 
