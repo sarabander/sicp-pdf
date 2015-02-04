@@ -6,7 +6,7 @@
 %  It will be read in by texi-to-latex.pl.  %
 %===========================================%
 
-\documentclass[11pt,oneside]{book}
+\documentclass[12pt,oneside]{book}
 
 % New line height: 1.05 * 1.2 = 1.26
 \renewcommand{\baselinestretch}{1.05}
@@ -64,12 +64,12 @@
 \pagestyle{plain}
 \usepackage[final]{pdfpages} % inserts pages from a pdf file
 
-% Page geometry for 10-inch tablets:
-\usepackage[papersize={148mm,197mm},
-            top=21mm,
-            textwidth=111mm,  % increase one or both of these by 1mm or so to
-            textheight=148mm, % make the source compile with TeX Live 2013
-            hcentering,       % if you get "Too many unprocessed floats" error
+% Page geometry for US Letter paper (8.5" x 11"):
+\usepackage[papersize={216mm,279mm},
+            top=30mm,
+            textwidth=136mm,
+            textheight=204mm,
+            hcentering,
 ]{geometry}
 
 \usepackage{titlesec}  % to change the appearance of section titles 
@@ -187,7 +187,7 @@
 \newcommand{\strong}[1]{\textbf{#1}}
 \newcommand{\var}[1]{\textsl{#1}}
 \newcommand{\code}[1]{\texttt{#1}}
-\newcommand{\link}[1]{\hyperref[#1]{#1}}
+\newcommand{\link}[1]{\hyperref[#1]{#1: \pageref{#1}}}
 \newcommand{\heading}[1]{{\sffamily\bfseries #1}}
 \newcommand{\dark}{\color{SchemeDark}}
 
