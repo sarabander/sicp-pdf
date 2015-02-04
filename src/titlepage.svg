@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   style="display:inline;enable-background:new"
+   sodipodi:docname="titlepage.svg"
+   inkscape:version="0.48.3.1 r9886"
+   version="1.1"
+   id="svg2"
+   height="990"
+   width="765">
+  <defs
+     id="defs4">
+    <filter
+       id="filter4141"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix4143"
+         type="saturate"
+         values="0" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70000001"
+     inkscape:cx="433.24485"
+     inkscape:cy="482.46513"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1004"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     height="1020px"
+     width="600px"
+     units="mm">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4033"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="kolmjaotus"
+     style="display:none"
+     transform="translate(0,136.99998)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 20,3 0,850"
+       id="path7396"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       transform="translate(0,-199.36211)"
+       style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 36.211155,202.36211 0,283.66628"
+       id="path7396-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       transform="translate(0,-199.36211)"
+       style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 35.714289,769.10039 0,283.66631"
+       id="path7396-4-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:label="tekst"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(0,-62.36212)">
+    <text
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"
+       x="633.60779"
+       y="390.63922"
+       id="text2985"
+       sodipodi:linespacing="110%"><tspan
+         sodipodi:role="line"
+         x="633.60779"
+         y="390.63922"
+         style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:110.00000238%;word-spacing:2px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold"
+         id="tspan3024"><tspan
+           dx="0 0 0 0 0 0 0 -0.5"
+           id="tspan3311"
+           style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:110.00000238%;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold">Structure and</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="633.60779"
+         y="436.83923"
+         style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:110.00000238%;word-spacing:2px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold"
+         id="tspan3313"><tspan
+           dx="0 0 0 0 0 0 -0.5"
+           style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:110.00000238%;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold"
+           id="tspan3315">Interpretation of</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="633.60779"
+         y="483.03922"
+         style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:110.00000238%;word-spacing:2px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold"
+         dx="0 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0 0 -0.5"
+         id="tspan3306"><tspan
+           dx="0 -0.5 0 0 0 0 0 -0.5"
+           style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:110.00000238%;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold"
+           id="tspan3308">Computer</tspan><tspan
+           style="word-spacing:0px"
+           id="tspan3040"> Programs</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"
+       x="633.29517"
+       y="819.84039"
+       id="text4059"
+       sodipodi:linespacing="120%"><tspan
+         sodipodi:role="line"
+         x="633.29517"
+         y="819.84039"
+         style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:120.00000477000000387%;word-spacing:1px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+         id="tspan7238"><tspan
+   dx="0 0 0 0 0 0 -1.25 0 0 0 0 0 0 0 0 0 0 0 0"
+   id="tspan3047"
+   style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:120.00000477000000387%;word-spacing:1px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Harold Abelson and </tspan>Gerald Jay Sussman</tspan><tspan
+         sodipodi:role="line"
+         x="633.29517"
+         y="851.04041"
+         style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:120.00000477%;word-spacing:2px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+         id="tspan7240"><tspan
+           style="word-spacing:1px"
+           id="tspan3278">with Julie Sussman, foreword by Alan</tspan><tspan
+           style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;word-spacing:1px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           id="tspan7244"> J. Perlis</tspan></tspan></text>
+    <g
+       id="g3051"
+       transform="translate(158,-32)">
+      <text
+         sodipodi:linespacing="120%"
+         id="text5884"
+         y="663.35364"
+         x="474.44144"
+         style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"
+         xml:space="preserve"><tspan
+           dx="0 0 0 0 0 0 0 0 0"
+           dy="0 0 0 0 0 0 0 0 0"
+           style="font-size:16.79999924px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:120.00000477%;word-spacing:1.29999995px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           id="tspan5892"
+           y="663.35364"
+           x="479.94144"
+           sodipodi:role="line"><tspan
+             dx="0.5"
+             id="tspan3026"
+             style="font-size:16.79999924px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;word-spacing:1.29999995px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Unoﬃcial Texinfo Format </tspan></tspan><tspan
+           dx="1"
+           id="tspan7192"
+           style="font-size:16.79999924px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:120.00000477%;word-spacing:1.29999995px;text-anchor:end;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           y="683.51361"
+           x="474.44144"
+           sodipodi:role="line">2.andresraba7</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5896"
+         y="639.08075"
+         x="296.0762"
+         style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"
+         xml:space="preserve"><tspan
+           dx="0 1 1 1 1 1 0 1 1 1 1 1 1 1"
+           style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1.79999995px;fill:#a02c2c;fill-opacity:1;font-family:Linux Libertine Capitals O;-inkscape-font-specification:Linux Libertine Capitals O"
+           y="639.08075"
+           x="296.0762"
+           id="tspan5898"
+           sodipodi:role="line">second edition</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="pilt"
+     style="display:inline"
+     transform="translate(0,-62.36212)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="abijooned"
+     style="display:none"
+     transform="translate(0,-62.36212)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="M 770,0 0,590"
+       id="path3109"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       transform="translate(0,62.36212)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 630,0 0,990"
+       id="path3111"
+       inkscape:connector-curvature="0"
+       transform="translate(0,62.36212)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 220,420 550,0"
+       id="path3123"
+       inkscape:connector-curvature="0"
+       transform="translate(0,62.36212)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 140,652.36212 0,399.99998"
+       id="path3115"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 140,652.36212 0,-590"
+       id="path3117"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 0,590 770,0"
+       id="path3113"
+       inkscape:connector-curvature="0"
+       transform="translate(0,62.36212)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 0,790 770,0"
+       id="path3129"
+       inkscape:connector-curvature="0"
+       transform="translate(0,62.36212)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="M 0,590 770,990"
+       id="path3125"
+       inkscape:connector-curvature="0"
+       transform="translate(0,62.36212)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="M 770,590 0,990"
+       id="path3127"
+       inkscape:connector-curvature="0"
+       transform="translate(0,62.36212)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 0,800 140,0"
+       id="path3276"
+       inkscape:connector-curvature="0"
+       transform="translate(0,62.36212)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"
+       d="m 630,862.36212 140,0"
+       id="path3276-9"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

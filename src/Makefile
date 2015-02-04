@@ -6,7 +6,7 @@ DIR := $(shell pwd)
 
 all: sicp.pdf
 
-sicp.pdf: sicp.tex exercises.tex figures.tex coverpage.pdf ${FIG}
+sicp.pdf: sicp.tex exercises.tex figures.tex coverpage.pdf titlepage.pdf ${FIG}
 	latexmk -pdflatex="xelatex %O %S" -pdf -dvi- -ps- $<; \
 	mv sicp.pdf ..
 
@@ -24,6 +24,6 @@ clean:
 	latexmk -CA
 
 clean-all: clean
-	${RM} ${FIG} sicp.tex exercises.tex figures.tex coverpage.pdf
+	${RM} ${FIG} sicp.tex exercises.tex figures.tex coverpage.pdf titlepage.pdf
 
 .PHONY: all clean clean-all
