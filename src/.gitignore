@@ -17,6 +17,7 @@
 fig/chap*/Fig*.pdf
 fig/icons/*_chess_queen.pdf
 coverpage.pdf
+titlepage.pdf
 sicp.tex
 sicp.fdb_latexmk
 exercises.tex

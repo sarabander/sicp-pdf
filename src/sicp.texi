@@ -76,7 +76,8 @@
 
 \frontmatter
 
-\includepdf[scale=0.92]{coverpage.pdf}
+\includepdf[scale=0.85]{coverpage.pdf}
+\includepdf[scale=0.97]{titlepage.pdf}
 
 \pagebreak
 
