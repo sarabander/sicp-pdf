@@ -12,7 +12,8 @@
 \renewcommand{\baselinestretch}{1.05}
 
 % Font settings
-\usepackage[no-math]{fontspec} %-----------------------%  This exact order
+\usepackage{minted} %----------------------------------%  Note:
+\usepackage[no-math]{fontspec}                         %  This exact order
 \defaultfontfeatures{%                                 %  of declarations
   Scale=MatchLowercase, % needed here ...              %  is important for
 }                                                      %  single quotes not
@@ -29,6 +30,7 @@
 \usepackage{polyglossia}
 \setdefaultlanguage[variant=american]{english}
 \setotherlanguages{greek}
+\usemintedstyle{emacs}
 
 % To be able to use '\-/' in place of '-' inside \code{}
 % so that long function names containing hyphens
@@ -39,6 +41,7 @@
 % graphicx package when using \includegraphics command:
 \usepackage[multidot]{grffile}
 \usepackage{graphicx}
+\usepackage{caption, wrapfig, framed}
 
 \usepackage[usenames,dvipsnames,x11names]{xcolor}
 \usepackage{amsmath}
@@ -46,6 +49,8 @@
 % To use Libertine letters and numbers,
 % but tx-style operators in math environment:
 \usepackage[libertine]{newtxmath}
+% Needed to display additional math unicode symbols (like double-colon)
+\usepackage{unicode-math}
 
 % Workaround to fix mismatched left and right math delimiters. Taken from:
 % http://tex.stackexchange.com/questions/63410/parentheses-differ-xelatex-fontspec-newtxmath-libertine
@@ -76,16 +81,27 @@
 \usepackage{listings}  % for syntax highlighted code listings
 \usepackage{verbatim}  % for simple verbatim and comment environments
 \usepackage{enumerate} % allows customized labels in enumerations
+\usepackage{enumitem}  % allows nested enumeration with numbers
 \usepackage{hyperref}  % makes cross references and URLs clickable
 \definecolor{LinkRed}{HTML}{80171F}
 \hypersetup{
-  pdfauthor={Harold Abelson, Gerald Jay Sussman, Julie Sussman},
-  pdftitle={Structure and Interpretation of Computer Programs, 2nd ed.},
-  pdfsubject={computer science, programming, abstraction},
+  pdfauthor={Bartosz Milewski},
+  pdftitle={Category Theory for Programmers},
+  pdfsubject={category theory, computer science, programming, abstraction},
   colorlinks=true,
   linkcolor=LinkRed,
   urlcolor=LinkRed,
 }
+\usepackage{subfiles}
+\makeatletter
+\let\org@subfile\subfile
+\renewcommand*{\subfile}[1]{%
+  \filename@parse{#1}% LaTeX's file name parser
+  \expandafter
+  \graphicspath\expandafter{\expandafter{\filename@area}}%
+  \org@subfile{"#1"}%
+}
+\makeatother
 
 % Document colors
 \definecolor{SchemeLight}   {HTML} {686868}
@@ -193,6 +209,11 @@
 \newcommand{\dark}{\color{SchemeDark}}
 \newcommand{\mono}[1]{\hbox{\ttfamily\scriptsize #1}}
 \newcommand{\monoit}[1]{\hbox{\ttfamily\itshape\scriptsize #1}}
+
+\makeatletter
+\newcommand\urlfootnote@[1]{\footnote{\url@{#1}}}
+\DeclareRobustCommand{\urlfootnote}{\hyper@normalise\urlfootnote@}
+\makeatother
 
 \newenvironment{example}%
   {\verbatim\small}%
