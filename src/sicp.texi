@@ -33541,7 +33541,7 @@ Otherwise, @code{preserving} simply returns the appended instruction sequences.
 Thus, for example,
 
 @lisp
-(preserving (list @math{\langle}@var{reg}@math{_{\mono{1}}\rangle} @math{\langle}@var{reg}@math{_{\mono{2}}\rangle}) @math{\langle}@var{seg}@math{_{\mono{1}}\rangle} @math{\langle}@var{seg}@math{_{\mono{2}}\rangle})
+(preserving (list @math{\langle}@var{reg}@math{_{\mono{1}}\rangle} @math{\langle}@var{reg}@math{_{\mono{2}}\rangle}) @math{\langle}@var{seq}@math{_{\mono{1}}\rangle} @math{\langle}@var{seq}@math{_{\mono{2}}\rangle})
 @end lisp
 
 @noindent
