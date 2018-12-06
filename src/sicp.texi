@@ -16766,9 +16766,9 @@ or alphabetically).  (Compare @ref{Exercise 2.66} of @ref{Chapter 2}.)
 @strong{@anchor{Exercise 3.27}Exercise 3.27:} @newterm{Memoization} (also
 called @newterm{tabulation}) is a technique that enables a procedure to record,
 in a local table, values that have previously been computed.  This technique
-can make a vast difference in the performance of a program.  A memoized
+can make a vast difference in the performance of a program.  A memorized
 procedure maintains a table in which values of previous calls are stored using
-as keys the arguments that produced the values.  When the memoized procedure is
+as keys the arguments that produced the values.  When the memorized procedure is
 asked to compute a value, it first checks the table to see if the value is
 already there and, if so, just returns that value.  Otherwise, it computes the
 new value in the ordinary way and stores this in the table.  As an example of
@@ -16782,11 +16782,11 @@ computing Fibonacci numbers:
         (else (+ (fib (- n 1)) (fib (- n 2))))))
 @end lisp
 
-The memoized version of the same procedure is
+The memorized version of the same procedure is
 
 @lisp
 (define memo-fib
-  (memoize
+  (memorize
    (lambda (n)
      (cond ((= n 0) 0)
            ((= n 1) 1)
@@ -16795,10 +16795,10 @@ The memoized version of the same procedure is
 @end lisp
 
 @noindent
-where the memoizer is defined as
+where the memorizer is defined as
 
 @lisp
-(define (memoize f)
+(define (memorize f)
   (let ((table (make-table)))
     (lambda (x)
       (let ((previously-computed-result
@@ -16812,7 +16812,7 @@ where the memoizer is defined as
 Draw an environment diagram to analyze the computation of @code{(memo-fib 3)}.
 Explain why @code{memo-fib} computes the @math{n^{\mathrm{th}}} Fibonacci number in a number
 of steps proportional to @math{n}.  Would the scheme still work if we had simply
-defined @code{memo-fib} to be @code{(memoize fib)}?
+defined @code{memo-fib} to be @code{(memorize fib)}?
 @end quotation
 
 @subsection A Simulator for Digital Circuits
@@ -19622,11 +19622,11 @@ can lead to serious inefficiency in recursive programs involving streams.  (See
 @ref{Exercise 3.57}.)  The solution is to build delayed objects so that the
 first time they are forced, they store the value that is computed.  Subsequent
 forcings will simply return the stored value without repeating the computation.
-In other words, we implement @code{delay} as a special-purpose memoized
+In other words, we implement @code{delay} as a special-purpose memorized
 procedure similar to the one described in @ref{Exercise 3.27}.  One way to
 accomplish this is to use the following procedure, which takes as argument a
-procedure (of no arguments) and returns a memoized version of the procedure.
-The first time the memoized procedure is run, it saves the computed result.  On
+procedure (of no arguments) and returns a memorized version of the procedure.
+The first time the memorized procedure is run, it saves the computed result.  On
 subsequent evaluations, it simply returns the result.
 
 @lisp
@@ -24187,17 +24187,17 @@ In general, a thunk will be forced only when its value is needed: when it is
 passed to a primitive procedure that will use the value of the thunk; when it
 is the value of a predicate of a conditional; and when it is the value of an
 operator that is about to be applied as a procedure.  One design choice we have
-available is whether or not to @newterm{memoize} thunks, as we did with delayed
+available is whether or not to @newterm{memorize} thunks, as we did with delayed
 objects in @ref{3.5.1}.  With memoization, the first time a thunk is
 forced, it stores the value that is computed.  Subsequent forcings simply
 return the stored value without repeating the computation.  We'll make our
-interpreter memoize, because this is more efficient for many applications.
+interpreter memorize, because this is more efficient for many applications.
 There are tricky considerations here, however.@footnote{Lazy evaluation
 combined with memoization is sometimes referred to as @newterm{call-by-need}
 argument passing, in contrast to @newterm{call-by-name} argument passing.
-(Call-by-name, introduced in Algol 60, is similar to non-memoized lazy
-evaluation.)  As language designers, we can build our evaluator to memoize, not
-to memoize, or leave this an option for programmers (@ref{Exercise 4.31}).  As
+(Call-by-name, introduced in Algol 60, is similar to non-memorized lazy
+evaluation.)  As language designers, we can build our evaluator to memorize, not
+to memorize, or leave this an option for programmers (@ref{Exercise 4.31}).  As
 you might expect from @ref{Chapter 3}, these choices raise issues that become
 both subtle and confusing in the presence of assignments.  (See @ref{Exercise 4.27}
 and @ref{Exercise 4.29}.)  An excellent article by @ref{Clinger (1982)}
@@ -24369,7 +24369,7 @@ follows:
 
 @noindent
 Actually, what we want for our interpreter is not quite this, but rather thunks
-that have been memoized.  When a thunk is forced, we will turn it into an
+that have been memorized.  When a thunk is forced, we will turn it into an
 evaluated thunk by replacing the stored expression with its value and changing
 the @code{thunk} tag so that it can be recognized as already
 evaluated.@footnote{Notice that we also erase the @code{env} from the thunk
@@ -24379,7 +24379,7 @@ removing the reference from the thunk to the @code{env} once it is no longer
 needed allows this structure to be @newterm{garbage-collected} and its space
 recycled, as we will discuss in @ref{5.3}.
 
-Similarly, we could have allowed unneeded environments in the memoized delayed
+Similarly, we could have allowed unneeded environments in the memorized delayed
 objects of @ref{3.5.1} to be garbage-collected, by having
 @code{memo-proc} do something like @code{(set! proc '())} to discard the
 procedure @code{proc} (which includes the environment in which the @code{delay}
@@ -24463,7 +24463,7 @@ count
 @math{\langle}@var{response}@math{\rangle}
 @end lisp
 
-Give the responses both when the evaluator memoizes and when it does not.
+Give the responses both when the evaluator memorizes and when it does not.
 @end quotation
 
 @quotation
@@ -24566,7 +24566,7 @@ between delaying with and without memoization.  For example, the definition
 @noindent
 would define @code{f} to be a procedure of four arguments, where the first and
 third arguments are evaluated when the procedure is called, the second argument
-is delayed, and the fourth argument is both delayed and memoized.  Thus,
+is delayed, and the fourth argument is both delayed and memorized.  Thus,
 ordinary procedure definitions will produce the same behavior as ordinary
 Scheme, while adding the @code{lazy-memo} declaration to each parameter of
 every compound procedure will produce the behavior of the lazy evaluator
@@ -24575,7 +24575,7 @@ such an extension to Scheme.  You will have to implement new syntax procedures
 to handle the new syntax for @code{define}.  You must also arrange for
 @code{eval} or @code{apply} to determine when arguments are to be delayed, and
 to force or delay arguments accordingly, and you must arrange for forcing to
-memoize or not, as appropriate.
+memorize or not, as appropriate.
 @end quotation
 
 @subsection Streams as Lazy Lists
