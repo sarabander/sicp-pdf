@@ -3250,6 +3250,17 @@ linearly with the input.  See @ref{Exercise 3.27}.}
 @quotation
 @strong{@anchor{Exercise 1.11}Exercise 1.11:} A function @math{f} is defined by
 the rule that
+@ifinfo
+
+@example
+       /
+       | n                           if n < 3
+f(n) = < f(n-1) + 2f(n-2) + 3f(n-3)  if n >= 3
+       |
+       \
+@end example
+
+@end ifinfo
 @tex
 $$
 f(n) =
