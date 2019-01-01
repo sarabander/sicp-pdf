@@ -3250,6 +3250,17 @@ linearly with the input.  See @ref{Exercise 3.27}.}
 @quotation
 @strong{@anchor{Exercise 1.11}Exercise 1.11:} A function @math{f} is defined by
 the rule that
+@ifinfo
+
+@example
+       /
+       | n                           if n < 3
+f(n) = < f(n-1) + 2f(n-2) + 3f(n-3)  if n >= 3
+       |
+       \
+@end example
+
+@end ifinfo
 @tex
 $$
 f(n) =
@@ -24444,8 +24455,9 @@ count
 @code{actual-value} rather than @code{eval} to evaluate the operator before
 passing it to @code{apply}, in order to force the value of the operator.  Give
 an example that demonstrates the need for this forcing.
+@end quotation
 
-@noindent
+@quotation
 @strong{@anchor{Exercise 4.29}Exercise 4.29:} Exhibit a program that you would
 expect to run much more slowly without memoization than with memoization.
 Also, consider the following interaction, where the @code{id} procedure is
