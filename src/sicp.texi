@@ -7853,8 +7853,10 @@ square each element, and sum the results:
 
 @lisp
 (define (sum-odd-squares tree)
-  (accumulate
-   + 0 (map square (filter odd? (enumerate-tree tree)))))
+  (accumulate + 0 (map square
+                       (filter
+                        odd?
+                        (enumerate-tree tree)))))
 @end lisp
 
 @noindent
@@ -7891,7 +7893,8 @@ of the first @math{n + 1} Fibonacci numbers:
   (accumulate
    cons
    nil
-   (map square (map fib (enumerate-interval 0 n)))))
+   (map square
+        (map fib (enumerate-interval 0 n)))))
 (list-fib-squares 10)
 @i{(0 1 1 4 9 25 64 169 441 1156 3025)}
 @end lisp
@@ -7902,8 +7905,11 @@ integers in a sequence:
 
 @lisp
 (define (product-of-squares-of-odd-elements sequence)
-  (accumulate * 1 (map square (filter odd? sequence))))
-(product-of-squares-of-odd-elements (list 1 2 3 4 5))
+  (accumulate * 1 (map
+                   square
+                   (filter odd? sequence))))
+(product-of-squares-of-odd-elements
+  (list 1 2 3 4 5))
 @i{225}
 @end lisp
 
@@ -7917,7 +7923,9 @@ write
 
 @lisp
 (define (salary-of-highest-paid-programmer records)
-  (accumulate max 0 (map salary (filter programmer? records))))
+  (accumulate max 0 (map
+                     salary
+                     (filter programmer? records))))
 @end lisp
 
 @noindent
@@ -8007,10 +8015,12 @@ polynomial using Horner's rule.  Assume that the coefficients of the polynomial
 are arranged in a sequence, from @math{a_0} through @math{a_n}.
 
 @lisp
-(define (horner-eval x coefficient-sequence)
-  (accumulate (lambda (this-coeff higher-terms) @math{\langle}??@math{\rangle})
-              0
-              coefficient-sequence))
+(define
+  (horner-eval x coefficient-sequence)
+  (accumulate
+    (lambda (this-coeff higher-terms) @math{\langle}??@math{\rangle})
+    0
+    coefficient-sequence))
 @end lisp
 
 For example, to compute @math{1 + 3x + 5x^3 + x^5} at @math{x = 2} you
@@ -17072,8 +17082,9 @@ signal on the input wire changes value.  The procedure computes the
 (define (inverter input output)
   (define (invert-input)
     (let ((new-value (logical-not (get-signal input))))
-      (after-delay inverter-delay
-                   (lambda () (set-signal! output new-value)))))
+      (after-delay
+       inverter-delay
+       (lambda () (set-signal! output new-value)))))
   (add-action! input invert-input) 'ok)
 (define (logical-not s)
   (cond ((= s 0) 1)
@@ -17091,8 +17102,10 @@ the output wire after one @code{and-gate-delay}.
 @lisp
 (define (and-gate a1 a2 output)
   (define (and-action-procedure)
-    (let ((new-value
-           (logical-and (get-signal a1) (get-signal a2))))
+    (let
+      ((new-value (logical-and
+                      (get-signal a1)
+                      (get-signal a2))))
       (after-delay
        and-gate-delay
        (lambda () (set-signal! output new-value)))))
@@ -17608,14 +17621,14 @@ $$ 9C = 5(F - 32). $$
 @end tex
 Such a constraint can be thought of as a network consisting of primitive adder,
 multiplier, and constant constraints (@ref{Figure 3.28}).  In the figure, we
-see on the left a multiplier box with three terminals, labeled @math{m}1, @math{m}2,
+see on the left a multiplier box with three terminals, labeled @math{{m1}}, @math{{m2}},
 and @math{p}.  These connect the multiplier to the rest of the network as follows:
-The @math{m}1 terminal is linked to a connector @math{C}, which will hold the Celsius
-temperature.  The @math{m}2 terminal is linked to a connector @math{w}, which is also
+The @math{{m1}} terminal is linked to a connector @math{C}, which will hold the Celsius
+temperature.  The @math{{m2}} terminal is linked to a connector @math{w}, which is also
 linked to a constant box that holds 9.  The @math{p} terminal, which the
-multiplier box constrains to be the product of @math{m}1 and @math{m}2, is linked to
-the @math{p} terminal of another multiplier box, whose @math{m}2 is connected to a
-constant 5 and whose @math{m}1 is connected to one of the terms in a sum.
+multiplier box constrains to be the product of @math{{m1}} and @math{{m2}}, is linked to
+the @math{p} terminal of another multiplier box, whose @math{{m2}} is connected to a
+constant 5 and whose @math{{m1}} is connected to one of the terms in a sum.
 
 @float
 @anchor{Figure 3.28}
@@ -17658,7 +17671,7 @@ multipliers and the adder, which determine that there is not enough information
 to proceed.  If the user (or some other part of the network) sets @math{C} to a
 value (say 25), the leftmost multiplier will be awakened, and it will set @math{u}
 to @math{25 \cdot 9 = 225}.  Then @math{u} awakens the second multiplier, which sets @math{v} to
-45, and @math{v} awakens the adder, which sets @math{f} to 77.
+45, and @math{v} awakens the adder, which sets @math{F} to 77.
 
 @subsubheading Using the constraint system
 
@@ -18802,13 +18815,13 @@ bug in our banking system!)}
 @noindent
 This procedure works well when only a single process is trying to do the
 exchange.  Suppose, however, that Peter and Paul both have access to accounts
-@math{a}1, @math{a}2, and @math{a}3, and that Peter exchanges @math{a}1 and @math{a}2 while
-Paul concurrently exchanges @math{a}1 and @math{a}3.  Even with account deposits and
-withdrawals serialized for individual accounts (as in the @code{make-account}
-procedure shown above in this section), @code{exchange} can still produce
-incorrect results.  For example, Peter might compute the difference in the
-balances for @math{a}1 and @math{a}2, but then Paul might change the balance in
-@math{a}1 before Peter is able to complete the exchange.@footnote{If the account
+@math{{a1}}, @math{{a2}}, and @math{{a3}}, and that Peter exchanges @math{{a1}}
+and @math{{a2}} while Paul concurrently exchanges @math{{a1}} and @math{{a3}}.  Even
+with account deposits and withdrawals serialized for individual accounts (as in
+the @code{make-account} procedure shown above in this section), @code{exchange}
+can still produce incorrect results.  For example, Peter might compute the difference
+in the balances for @math{{a1}} and @math{{a2}}, but then Paul might change the balance
+in @math{{a1}} before Peter is able to complete the exchange.@footnote{If the account
 balances start out as $10, $20, and $30, then after any number of concurrent
 exchanges, the balances should still be $10, $20, and $30 in some order.
 Serializing the deposits to individual accounts is not sufficient to guarantee
@@ -19104,14 +19117,14 @@ in terms of atomic @code{test-and-set!} operations.
 
 Now that we have seen how to implement serializers, we can see that account
 exchanging still has a problem, even with the @code{serialized-exchange}
-procedure above.  Imagine that Peter attempts to exchange @math{a}1 with @math{a}2
-while Paul concurrently attempts to exchange @math{a}2 with @math{a}1.  Suppose that
+procedure above.  Imagine that Peter attempts to exchange @math{a1} with @math{a2}
+while Paul concurrently attempts to exchange @math{a2} with @math{a1}.  Suppose that
 Peter's process reaches the point where it has entered a serialized procedure
-protecting @math{a}1 and, just after that, Paul's process enters a serialized
-procedure protecting @math{a}2.  Now Peter cannot proceed (to enter a serialized
-procedure protecting @math{a}2) until Paul exits the serialized procedure
-protecting @math{a}2.  Similarly, Paul cannot proceed until Peter exits the
-serialized procedure protecting @math{a}1.  Each process is stalled forever,
+protecting @math{a1} and, just after that, Paul's process enters a serialized
+procedure protecting @math{a2}.  Now Peter cannot proceed (to enter a serialized
+procedure protecting @math{a2}) until Paul exits the serialized procedure
+protecting @math{a2}.  Similarly, Paul cannot proceed until Peter exits the
+serialized procedure protecting @math{a1}.  Each process is stalled forever,
 waiting for the other.  This situation is called a @newterm{deadlock}.
 Deadlock is always a danger in systems that provide concurrent access to
 multiple shared resources.
@@ -21723,7 +21736,7 @@ On the other hand, if we look closely, we can see time-related problems
 creeping into functional models as well.  One particularly troublesome area
 arises when we wish to design interactive systems, especially ones that model
 interactions between independent entities.  For instance, consider once more
-the implementation a banking system that permits joint bank accounts.  In a
+the implementation of a banking system that permits joint bank accounts.  In a
 conventional system using assignment and objects, we would model the fact that
 Peter and Paul share an account by having both Peter and Paul send their
 transaction requests to the same bank-account object, as we saw in
