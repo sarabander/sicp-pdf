@@ -35756,7 +35756,7 @@ into sequences of C instructions.  Compile the metacircular evaluator of
 @unnumbered References
 @node    References, List of Exercises, Chapter 5, Top
 
-\fontspec[Numbers={OldStyle},StylisticSet=6]{Linux Libertine O}
+\fontspec[Numbers={OldStyle},StylisticSet=6]{Libertinus Serif}
 
 \phantomsection @anchor{Abelson et al. 1992}
 @b{Abelson}, Harold, Andrew Berlin, Jacob Katzenelson, William McAllister,
@@ -36323,7 +36323,7 @@ Ph.D. dissertation, Department of Electrical Engineering and Computer Science,
 @b{Zippel}, Richard.  1993.  @cite{Effective Polynomial Computation}.  Boston, @acronym{MA}:
 Kluwer Academic Publishers.
 
-\fontspec[Numbers={Lining}]{Linux Libertine O}
+\fontspec[Numbers={Lining}]{Libertinus Serif}
 
 @unnumbered List of Exercises
 @node    List of Exercises, List of Figures, References, Top
