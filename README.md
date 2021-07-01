@@ -15,10 +15,7 @@ To properly build this book, you need these fonts:
 
 - **Inconsolata**: [ttf-inconsolata](https://archlinux.org/packages/community/any/ttf-inconsolata/)
 - **Libertinus**: [libertinus-font](https://archlinux.org/packages/community/any/libertinus-font/)
-- **Latin Modern** (the specific font used is **LMMono12**): [otf-latin-modern](https://archlinux.org/packages/community/any/otf-latin-modern/)
-- **Alegreya** (https://github.com/huertatipografica/Alegreya)
-
-Note that **Latin Modern** is required because it is used with Inkscape, not LaTeX.
+- **Alegreya**: <https://github.com/huertatipografica/Alegreya>
 
 ## Source
 
