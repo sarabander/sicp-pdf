@@ -16,15 +16,15 @@
 \defaultfontfeatures{%                                 %  of declarations
   Scale=MatchLowercase, % needed here ...              %  is important for
 }                                                      %  single quotes not
-\setmonofont{Inconsolata LGC}                          %  to turn out curly
+\setmonofont{Inconsolata}                          %  to turn out curly
                                                        %  ("typographic")
 \defaultfontfeatures{%                                 %  in verbatim blocks
   Scale=MatchLowercase, % ... and here again           %  of Scheme code.
   Mapping=tex-text,                                    %  Now the quote is
   SmallCapsFeatures={LetterSpace=2.5,WordSpace=1.05},  %  upright and safely
 }                                                      %  copy-pasteable to
-\setmainfont{Linux Libertine O}                        %  the REPL without
-\setsansfont{Linux Biolinum O} %-----------------------%  giving errors.
+\setmainfont{Libertinus Serif}                        %  the REPL without
+\setsansfont{Libertinus Sans} %-----------------------%  giving errors.
 
 \usepackage{polyglossia}
 \setdefaultlanguage[variant=american]{english}
@@ -183,8 +183,8 @@
     commentstyle=\color{SchemeLight}\itshape,
 }
 
-\newcommand{\acronym}[1]{\textsc{\fontspec[Numbers={OldStyle}]{Linux Libertine O}\MakeLowercase{#1}}}
-\newcommand{\uppersc}[1]{{\fontspec[Letters=UppercaseSmallCaps]{Linux Libertine O}#1}}
+\newcommand{\acronym}[1]{\textsc{\fontspec[Numbers={OldStyle}]{Libertinus Serif}\MakeLowercase{#1}}}
+\newcommand{\uppersc}[1]{{\fontspec[Letters=UppercaseSmallCaps]{Libertinus Serif}#1}}
 \newcommand{\newterm}[1]{\index{#1}\emph{#1}}
 \newcommand{\var}[1]{\textsl{#1}}
 \newcommand{\code}[1]{\texttt{#1}}
