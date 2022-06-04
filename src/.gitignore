@@ -1,5 +1,6 @@
 *.aux
 *.cp*
+*.fls
 *.fn
 *.ky
 *.log

@@ -699,7 +699,7 @@
        d="m 120,84.862183 c 0,1.380711 -1.11929,2.5 -2.5,2.5 -1.38071,0 -2.5,-1.119289 -2.5,-2.5 0,-1.380712 1.11929,-2.5 2.5,-2.5 1.38071,0 2.5,1.119288 2.5,2.5 z" />
     <text
        xml:space="preserve"
-       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata LGC;-inkscape-font-specification:Inconsolata LGC"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata"
        x="84.178558"
        y="278.89789"
        id="text3007-0-2"
@@ -708,10 +708,10 @@
          id="tspan3009-8-5"
          x="84.178558"
          y="278.89789"
-         style="font-weight:normal;-inkscape-font-specification:Inconsolata LGC">1</tspan></text>
+         style="font-weight:normal;-inkscape-font-specification:Inconsolata">1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata LGC;-inkscape-font-specification:Inconsolata LGC"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata"
        x="294.17856"
        y="278.89789"
        id="text3007-0"
@@ -720,10 +720,10 @@
          id="tspan3009-8"
          x="294.17856"
          y="278.89789"
-         style="font-weight:normal;-inkscape-font-specification:Inconsolata LGC">4</tspan></text>
+         style="font-weight:normal;-inkscape-font-specification:Inconsolata">4</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata LGC;-inkscape-font-specification:Inconsolata LGC"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata"
        x="154.17856"
        y="278.89789"
        id="text3007-0-7"
@@ -732,10 +732,10 @@
          id="tspan3009-8-52"
          x="154.17856"
          y="278.89789"
-         style="font-weight:normal;-inkscape-font-specification:Inconsolata LGC">2</tspan></text>
+         style="font-weight:normal;-inkscape-font-specification:Inconsolata">2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata LGC;-inkscape-font-specification:Inconsolata LGC"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Inconsolata;-inkscape-font-specification:Inconsolata"
        x="224.17856"
        y="278.89789"
        id="text3007-0-6"
@@ -744,6 +744,6 @@
          id="tspan3009-8-6"
          x="224.17856"
          y="278.89789"
-         style="font-weight:normal;-inkscape-font-specification:Inconsolata LGC">3</tspan></text>
+         style="font-weight:normal;-inkscape-font-specification:Inconsolata">3</tspan></text>
   </g>
 </svg>
