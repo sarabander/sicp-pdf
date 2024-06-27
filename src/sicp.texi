@@ -81,8 +81,7 @@
 
 \frontmatter
 
-\includepdf[scale=0.85]{coverpage.pdf}
-\includepdf[scale=0.97]{titlepage.pdf}
+\includepdf[scale=0.92]{coverpage.pdf}
 
 \pagebreak
 
@@ -114,9 +113,9 @@ with Julie Sussman, foreword by Alan J. Perlis
 @sp 0.4
 @noindent
 This work is licensed under a Creative Commons@*
-Attribution-NonCommercial-ShareAlike 3.0 Unported License@*
-(@url{http://creativecommons.org/licenses/by-nc-sa/3.0/}).@*
-Based on a work at @url{http://mitpress.mit.edu/sicp/}.
+Attribution-ShareAlike 4.0 International License@*
+(@url{http://creativecommons.org/licenses/by-sa/4.0/, @acronym{CC BY-SA 4.0}}).
+Based on a work at @url{http://mitpress.mit.edu/sicp/, mitpress.mit.edu}.
 
 @sp 1.26
 @noindent
@@ -137,7 +136,7 @@ based on @url{http://www.neilvandyke.org/sicp-texi/, 2.neilvandyke4} (January 10
 
 \end{center}
 \end{small}
-
+\vspace*{\fill}
 \pagebreak
 
 \tableofcontents

@@ -6,7 +6,7 @@
 %  It will be read in by texi-to-latex.pl.  %
 %===========================================%
 
-\documentclass[12pt,oneside]{book}
+\documentclass[11pt,oneside]{book}
 
 % New line height: 1.05 * 1.2 = 1.26
 \renewcommand{\baselinestretch}{1.05}
@@ -188,7 +188,8 @@
 \newcommand{\newterm}[1]{\index{#1}\emph{#1}}
 \newcommand{\var}[1]{\textsl{#1}}
 \newcommand{\code}[1]{\texttt{#1}}
-\newcommand{\link}[1]{\hyperref[#1]{#1: \pageref{#1}}}
+% \newcommand{\link}[1]{\hyperref[#1]{#1: \pageref{#1}}}
+\newcommand{\link}[1]{\hyperref[#1]{#1}}
 \newcommand{\heading}[1]{{\sffamily\bfseries #1}}
 \newcommand{\dark}{\color{SchemeDark}}
 \newcommand{\mono}[1]{\hbox{\ttfamily\scriptsize #1}}
