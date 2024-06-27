@@ -18,7 +18,7 @@ exercises.tex figures.tex: ex-fig-ref.pl
 	./ex-fig-ref.pl -f > figures.tex
 
 %.pdf: %.svg
-	inkscape -f ${DIR}/$< -C -A ${DIR}/$@
+	inkscape ${DIR}/$< --export-type=pdf --export-area-page --batch-process --export-filename=${DIR}/$@
 
 clean:
 	latexmk -CA
